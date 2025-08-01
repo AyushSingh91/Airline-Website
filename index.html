@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flivain - Book Your Flight</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="logo">
+      <h2>Flivain</h2>
+      <p>Flight Booking Agency</p>
+    </div>
+    <nav>
+      <a class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#offer">Offers</a>
+      <a href="#seat">Seats</a>
+      <a href="#destinations">Destinations</a>
+    </nav>
+    <!-- <button class="contact-btn">Contact</button> -->
+     <button onclick="openPopup()">Contact</button>
+
+  <div class="overlay" id="overlay" onclick="closePopup()"></div>
+  <span class="close-btn" id="closeBtn" onclick="closePopup()">✕</span>
+  <iframe id="popupFrame" src="signup.html"></iframe>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <h1 class="main-title">Find And Book <br><span>A Great Experience</span></h1>
+
+    <div class="plane-wrapper">
+      <img src="plane.png" alt="Plane" id="plane" />
+    </div>
+
+    <div class="booking-form">
+     <div class="class-select">
+      <button data-class="Economy">Economy</button>
+      <button class="active" data-class="Business">Business Class</button>
+      <button data-class="Fast">Fast Class</button>
+     </div>
+
+
+      <div class="form-fields">
+        <div class="field">
+          <label>Location</label>
+          <input type="text" placeholder="Where are you going?" />
+        </div>
+        <div class="field">
+          <label>Travelers</label>
+          <input type="text" placeholder="Add guests" />
+        </div>
+        <div class="field">
+          <label>Check in</label>
+          <input type="date" />
+        </div>
+        <div class="field">
+          <label>Check out</label>
+          <input type="date" />
+        </div>
+        <button class="search-btn">🔍</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Travel Support -->
+    <section class="travel-support" id="about">
+    <div class="content">
+      <p class="subheading">TRAVEL SUPPORT</p>
+      <h2>Plan your travel with confidence</h2>
+      <p class="desc">
+        Find help with your bookings and travel plans, and see what to expect along your journey.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <div class="number blue">01</div>
+          <div>
+            <h4>Travel requirements for Dubai</h4>
+            <p>Momondo is by far one of the best travel websites for sourcing travel deals.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="number orange">02</div>
+          <div>
+            <h4>Multi-risk travel insurance</h4>
+            <p>Momondo is by far one of the best travel websites for sourcing travel deals.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="number peach">03</div>
+          <div>
+            <h4>Travel requirements by destination</h4>
+            <p>Momondo is by far one of the best travel websites for sourcing travel deals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="images">
+      <img src="https://images.robertharding.com/zoom/RF/RH_RF/HORIZONTAL/1237-480.jpg" alt="Plane 1" class="img1" />
+      <img src="https://www.shutterstock.com/image-photo/view-airplane-window-beautiful-cloudy-600nw-2505896799.jpg" alt="Plane 2" class="img2" />
+      <img src="https://static.vecteezy.com/system/resources/previews/024/740/458/large_2x/the-engine-and-wing-of-an-airplane-in-the-sky-during-flight-the-view-from-the-airplane-window-to-the-ground-before-landing-photo.jpg" alt="Plane 3" class="img3" />
+    </div>
+  </section>
+
+  <!-- Offer Section -->
+   <section class="features-section" id="offer">
+    <div class="features-header">
+      <h2>Travel to make memories all around <br> the world</h2>
+      <button class="view-btn">View All</button>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon blue">
+          📅
+        </div>
+        <h3>Book & relax</h3>
+        <p>We realize ideas from simple to complex, everything becomes easy to use.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon orange">
+          ✅
+        </div>
+        <h3>Smart checklist</h3>
+        <p>Flight booking in your mind? Looking for cheap airfares Cleartrip is your one-stop.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon yellow">
+          💰
+        </div>
+        <h3>Save more</h3>
+        <p>Find cheap flights, UK travel green list deals, hotels & car hire over travel providers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seat Section -->
+   <section class="minor-lounge" id="seat">
+    <div class="lounge-content">
+      <div class="lounge-images">
+        <img src="https://images.unsplash.com/photo-1723378310272-2177aafa5b11?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWlycGxhbmUlMjBjYWJpbnxlbnwwfHwwfHx8MA%3D%3D" alt="Plane 1" class="img-oval large">
+        <img src="https://thumbs.dreamstime.com/b/air-hostess-showing-oxygen-mask-bangkok-thailand-december-thai-lion-company-how-to-use-taking-off-53921040.jpg" alt="Plane 2" class="img-oval small">
+      </div>
+      <div class="lounge-text">
+        <h2>Unaccompanied Minors Lounge</h2>
+        <div class="lounge-grid">
+          <div>
+            <h4>Help through the airport</h4>
+            <p>They’ll stay with them all the way through the airport to help them at security and immigration.</p>
+          </div>
+          <div>
+            <h4>Priority boarding</h4>
+            <p>Families and young flyers always board the plane first. That gives them more time to get settled.</p>
+          </div>
+          <div>
+            <h4>Care on the flight</h4>
+            <p>Our cabin crew are on hand to make sure your young flyer has a fun, comfortable.</p>
+          </div>
+          <div>
+            <h4>Support when they land</h4>
+            <p>When your child arrives, a specialist member of our team will be at the aircraft door.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destination Section -->
+  <section class="best-travelers" id="destinations">
+    <h2>Best travelers of the Month</h2>
+    <div class="travelers-grid">
+      <!-- Traveler Card -->
+      <div class="traveler-card">
+        <img src="https://i.natgeofe.com/k/c41b4f59-181c-4747-ad20-ef69987c8d59/eiffel-tower-night.jpg?wp=1&w=1084.125&h=1627.5" class="bg-img" alt="City 1">
+        <div class="profile">
+          <img src="https://as1.ftcdn.net/v2/jpg/06/39/83/70/500_F_639837022_VxffN2xzKY90L01cbwPUo9uZPQFKNdWa.jpg" alt="User 1" class="profile-img">
+          <div>
+            <h4>William Liam</h4>
+            <p>@william_liam</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="traveler-card">
+        <img src="https://images.unsplash.com/photo-1546412414-e1885259563a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZHViYWl8ZW58MHx8MHx8fDA%3D" class="bg-img" alt="City 2">
+        <div class="profile">
+          <img src="https://lucid.content-delivery-one.com/cdn-cgi/image/w=600,format=auto,metadata=none/675703157f0da.png" alt="User 2" class="profile-img">
+          <div>
+            <h4>James Noah</h4>
+            <p>@james_noah</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="traveler-card">
+        <img src="https://i.etsystatic.com/8886315/r/il/2e4e2c/1189472813/il_570xN.1189472813_kfvg.jpg" class="bg-img" alt="City 3">
+        <div class="profile">
+          <img src="https://pbs.twimg.com/media/GUDc3UuXoAAhwDI.jpg" alt="User 3" class="profile-img">
+          <div>
+            <h4>Levi Turisha</h4>
+            <p>@levi_turisha</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="traveler-card">
+        <img src="https://travelogyindia.b-cdn.net/blog/wp-content/uploads/2014/02/delhi.jpg" class="bg-img" alt="City 4">
+        <div class="profile">
+          <img src="https://lucid.content-delivery-one.com/cdn-cgi/image/w=600,format=auto,metadata=none/66e30e36c1442.png" alt="User 4" class="profile-img">
+          <div>
+            <h4>Sebastian Jahn</h4>
+            <p>@sebastian345</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+   <footer class="footer">
+    <div class="newsletter">
+      <h2>Subscribe Newsletter &<br> get latest News</h2>
+      <div class="subscribe-box">
+        <input type="email" placeholder="Enter your E-mail address" />
+        <button>Subscribe Now</button>
+      </div>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>About us</h4>
+        <ul>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Media Centre</a></li>
+          <li><a href="#">Our planet</a></li>
+          <li><a href="#">Our people</a></li>
+          <li><a href="#">Our communities</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Experience</h4>
+        <ul>
+          <li><a href="#">Cabin features</a></li>
+          <li><a href="#">Shop Emirates</a></li>
+          <li><a href="#">Dining</a></li>
+          <li><a href="#">Our lounges</a></li>
+          <li><a href="#">Open Skies</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Where we fly</h4>
+        <ul>
+          <li><a href="#">Route map</a></li>
+          <li><a href="#">Asia and Pacific</a></li>
+          <li><a href="#">The Americas</a></li>
+          <li><a href="#">Europe</a></li>
+          <li><a href="#">The Middle East</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Before you fly</h4>
+        <ul>
+          <li><a href="#">Baggage</a></li>
+          <li><a href="#">Visa and passport</a></li>
+          <li><a href="#">Travel information</a></li>
+          <li><a href="#">Dubai International Airport</a></li>
+          <li><a href="#">To and from the airport</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Loyalty</h4>
+        <ul>
+          <li><a href="#">Log in to Emirates Skywards</a></li>
+          <li><a href="#">Join Emirates Skywards</a></li>
+          <li><a href="#">Business Rewards benefits</a></li>
+          <li><a href="#">Our partners</a></li>
+          <li><a href="#">Register your company</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>2021 Emirates. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <div class="plane-wrapper1">
+      <img src="plane.png" alt="Plane" id="plane" />
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
